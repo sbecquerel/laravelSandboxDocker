@@ -4,7 +4,7 @@ Test environment for Laravel PHP framework.
 ## Howto
 Build images:
 ```bash
-docker-compose build build
+docker-compose build
 ```
 Run images in background (containers names: "laravel" and "laravel-mysql")
 ```bash
