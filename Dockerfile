@@ -3,7 +3,8 @@ FROM php:7.1-apache
 # Install essentials
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y zsh emacs-nox git tree wget less zip unzip vim --no-install-recommends \
+    && apt-get install -y mysql-client zsh emacs-nox git tree wget less zip unzip vim \
+       --no-install-recommends \
     && rm -r /var/lib/apt/lists/* 
 
 # Install vim theme
