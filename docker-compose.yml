@@ -16,3 +16,6 @@ services:
     container_name: laravel
     ports:
       - 80:80
+    #uncomment to mount host dirs
+    #volumes:
+    #  - /foo/bar:/var/www/html/laravel5 
