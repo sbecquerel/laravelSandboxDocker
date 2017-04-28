@@ -3,8 +3,14 @@ FROM php:7.1-apache
 # Install essentials
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y zsh emacs-nox git tree wget less zip unzip --no-install-recommends \
+    && apt-get install -y zsh emacs-nox git tree wget less zip unzip vim --no-install-recommends \
     && rm -r /var/lib/apt/lists/* 
+
+# Install vim theme
+RUN mkdir -p ~/.vim/colors \
+    && wget https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim -O ~/.vim/colors/Tomorrow-Night.vim
+
+COPY ./source/.vimrc /root/.vimrc
 
 # Install oh-my-zsh
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
