@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  mysql-laravel:
+    image: mysql:5.7
+    container_name: laravel-mysql
+    command: --sql-mode="NO_AUTO_CREATE_USER"
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  php-laravel:
+    build: .
+    image: laravel:5
+    container_name: laravel
+    ports:
+      - 80:80
