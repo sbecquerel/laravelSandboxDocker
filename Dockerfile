@@ -5,6 +5,7 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y mysql-client zsh emacs-nox git tree wget less zip unzip vim \
        --no-install-recommends \
+    && docker-php-ext-install pdo_mysql \
     && rm -r /var/lib/apt/lists/* 
 
 # Install vim theme
