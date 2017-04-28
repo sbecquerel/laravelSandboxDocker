@@ -2,17 +2,13 @@
 ## Intro
 Test environment for Laravel PHP framework.
 ## Howto
-Build image:
+Build images:
 ```bash
-docker build -t laravel:1 .
+docker-compose build build
 ```
-Run image in background (container name: "laravel")
+Run images in background (containers names: "laravel" and "laravel-mysql")
 ```bash
-docker run -p 80:80 --name laravel -d laravel:1
-```
-Use host source code (mount volume):
-```bash
-docker run -p 80:80 -v /home/john/laravel:/var/www/html/laravel5 --name laravel -d laravel:1
+docker-compose up -d
 ```
 Go inside container for work:
 ```bash
