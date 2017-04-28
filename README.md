@@ -10,7 +10,7 @@ Run images in background (containers names: "laravel" and "laravel-mysql")
 ```bash
 docker-compose up -d
 ```
-Go inside container for work:
+To go inside container for work:
 ```bash
 docker exec -it laravel zsh
 ```
