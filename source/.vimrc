@@ -6,4 +6,3 @@ set mouse=a
 syntax on
 colorscheme Tomorrow-Night
 set nocompatible
-inoremap ( ()<left>
