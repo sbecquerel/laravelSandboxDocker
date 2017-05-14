@@ -17,12 +17,15 @@ docker exec -it laravel zsh
 ## Project URL
 From Host, go to http://localhost/laravel5/public
 ## Tooltips
-To turn off autoindent when you paste code in vim.
-```vim
-:set paste
-```
-After pasting code.
-```vim
-:set nopaste
-```
-
+* vim
+> To turn off autoindent when you paste code in vim.
+> ```vim
+> :set paste
+> ```
+> After pasting code.
+> ```vim
+> :set nopaste
+> ```
+* Laravel debug tool bar
+Laravel debug bar: [barryvdh](https://github.com/barryvdh/laravel-debugbar)
+* Console: `php artisan tinker`
