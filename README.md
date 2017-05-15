@@ -21,3 +21,4 @@ From Host, go to http://localhost/laravel5/public
 * Laravel debug tool bar
 Laravel debug bar: [barryvdh](https://github.com/barryvdh/laravel-debugbar)
 * Console: `php artisan tinker`
+* Clear the compiled classes: `php artisan clear-compiled`
